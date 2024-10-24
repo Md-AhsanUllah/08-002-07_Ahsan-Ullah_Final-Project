@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+         nav a:hover{
+            background-color: #396897 ;
+        }
+       
+        .follow{
+            text-decoration: none;
+            color: white;
+        }
+        
+        nav{
+            background-color: #2E4053;
+        }
+        body{
+            font-family: sans-serif;
+        }
+        .circular-logo{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: #2E4053;
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="bg-dark text-white p-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="photos/png_20230315_181259_0000.jpg" class="img-fluid circular-logo" alt=" Logo">
+            </div>
+            <!-- Institution Name and Tagline -->
+            <div>
+                <h1 class="mb-0">Barishal University Photographic Society</h1>
+                <p>Phone: +8801779005540 |Email:bups.bu@gmail.com| Address: University of Barishal| <a href="https://www.facebook.com/search/top?q=barisal%20university%20photographic%20society%20-%20bups" class="follow">Follow Us</a></p>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" aria-current="page" href="index.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="members.html">Members</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="event.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="registration.html">Join Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    <!-- main section -->
+    <main>
+       
+          <div class="container my-5" style="background-color: #eefcf5;">
+            <h2 class="text-center mb-4">Registration Form</h2>
+        
+            <form action="#" method="post" enctype="multipart/form-data">
+              <!-- Name -->
+              <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+              </div>
+        
+              <!-- Department -->
+              <div class="mb-3">
+                <label for="department" class="form-label">Department</label>
+                <input type="text" class="form-control" id="department" name="department" placeholder="Enter your department" required>
+              </div>
+        
+              <!-- Roll Number -->
+              <div class="mb-3">
+                <label for="roll" class="form-label">Roll Number</label>
+                <input type="text" class="form-control" id="roll" name="roll" placeholder="Enter your roll number" required>
+              </div>
+              <div class="mb-3">
+                <label for="session" class="form-label">Session</label>
+                <input type="text" class="form-control" id="session" name="session" placeholder="Enter your Admission Session" required>
+              </div>
+        
+              <!-- Phone Number -->
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
+              </div>
+        
+              <!-- Gender -->
+              <div class="mb-3">
+                <label class="form-label">Gender</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gender" id="male" value="male" required>
+                  <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gender" id="female" value="female" required>
+                  <label class="form-check-label" for="female">Female</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gender" id="other" value="other" required>
+                  <label class="form-check-label" for="other">Other</label>
+                </div>
+              </div>
+        
+              <!-- Social Media Link -->
+              <div class="mb-3">
+                <label for="socialMedia" class="form-label">Social Media Link</label>
+                <input type="url" class="form-control" id="socialMedia" name="socialMedia" placeholder="Enter your social media link" required>
+              </div>
+        
+              <!-- Address -->
+              <div class="mb-3">
+                <label for="address" class="form-label">Address</label>
+                <textarea class="form-control" id="address" name="address" rows="3" placeholder="Enter your address" required></textarea>
+              </div>
+        
+              <!-- Device Name -->
+              <div class="mb-3">
+                <label for="device" class="form-label">Device Name</label>
+                <input type="text" class="form-control" id="device" name="device" placeholder="Enter your device name (e.g., Nikon D750)" required>
+              </div>
+        
+              <!-- Photo Attachment -->
+              <div class="mb-3">
+                <label for="photo" class="form-label">Upload Your Work(Minimum 3 Photos)</label>
+                <input type="file" class="form-control" id="photo" name="photo" required>
+              </div>
+        
+              <!-- Submit Button -->
+               
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary ">Submit</button>
+              </div>
+            </form>
+          </div>
+    </main>
+    <footer class="bg-dark text-white mt-2 p-2">
+        <div class="container">
+         <div class="row">
+            <div class="text-center mt-3">
+                <p>Phone: +8801779005540 |Email:bups.bu@gmail.com| Address: University of Barishal| <a href="https://www.facebook.com/search/top?q=barisal%20university%20photographic%20society%20-%20bups" class="follow">Follow Us</a></p>
+             </div>
+             <div class="text-center">
+                <p>&copy; 2024 Barishal University Photographic Society. All Rights Reserved.</p>
+             </div>
+            </div>
+        </footer>
+<link rel="stylesheet" href="js/bootstrap.min.js">
+</body>
+</html>
